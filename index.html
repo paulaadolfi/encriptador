@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <img src="https://res.cloudinary.com/dz6gqdulr/image/upload/v1663156948/encriptador/Frame_6_ojcpow.png" class="logo">
+
+    </header>
+    <main>
+   
+        <section class="accion">
+            <div>
+                <textarea  class="inputtexto" id="inputtexto" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="div-advertencia">
+                <img class="icon-advertencia" src="https://res.cloudinary.com/dz6gqdulr/image/upload/v1663255414/encriptador/vkuzdwbelz3s1ddb5oi8.png">
+                <span class="advertencia">Solo letras minúsculas y sin acentos.</span>
+            </div>
+            <div class="botones">
+                <button type="submit" class="btn-encriptar" id="btn-encriptar"> Encriptar</button>
+                <button type="submit" class="btn-desencriptar" id="btn-desencriptar"> Desencriptar </button>
+            </div>          
+        </section>
+
+        <section class="mensaje-resuelto">
+            <div class="sin-mensaje" id="div-sin-mensaje">
+                <img src="https://res.cloudinary.com/dz6gqdulr/image/upload/v1663156948/encriptador/Mu%C3%B1eco_gh4shv.png">
+                <h2>Ningun mensaje fue encontrado</h2>
+                <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+            </div>      
+            <div class="resultado" id="div-resultado">
+                <textarea type="text" class="texto-resultado" id="texto-resultado"></textarea>
+                <button class="copiar" id="copiar" type="submit">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
